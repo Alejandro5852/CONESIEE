@@ -38,7 +38,7 @@ export default class Usac extends Component {
 
     render() {
         return (
-                <div className="caja-registro">
+                <div className="caja-registro-usac">
                     <form onSubmit={this.onSubmit}>
                         <h1>Registro</h1>
                         <h2>Ingresa tu nombre completo</h2>
@@ -49,7 +49,7 @@ export default class Usac extends Component {
                         <input type="text" className="in-texto-reg" name = "dpi" onChange={this.onChange} required pattern= "[0-9]*"></input>
                         <h2>Ingresa tu correo institucional</h2>
                         <input type="email" className="in-texto-reg" name = "email" onChange={this.onChange} required ></input>
-                        <h2>Escoge tu carrera</h2>
+                        <h2>Escoge tu  carrera</h2>
                         <select className="combobox" name="tier" id="cars" onChange={this.onChange} required >
                             <option className="combo-item" value="7" >Ingeniería Eléctrica</option>
                             <option className="combo-item" value="7" >Ingeniería Electrónica</option>
