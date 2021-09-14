@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import Registro from './components/Registro/Registro'
+import Usac from './components/Registro/USAC/usac'
 import Perfil from './components/Perfil/Perfil'
 
 /* function Helloworld(props) {
@@ -89,12 +89,12 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Route exact path="/" title = "CONESIEEE" render={() => 
+        <Route exact path="/" render={() => 
           {return <div className = "contenedor-perfil"><Perfil/></div>}
         }>
         </Route>
-        <Route exact path="/registro" render={() => 
-          {return <div className = "contenedor-registro"><Registro/></div>}
+        <Route exact path="/usac" render={() => 
+          {return <div className = "contenedor-registro"><Usac/></div>}
         }>
         </Route>       
       </Router>);

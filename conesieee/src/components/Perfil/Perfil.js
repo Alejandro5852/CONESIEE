@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import './Perfil.css'
-export default class Perfil extends Component{
-    
-    componentDidMount() {
-        document.title = "CONESIEEE";
-    }
+import { useHistory } from 'react-router-dom';
 
-    render(){
+const Perfil = ()=>{
+
+    const history = useHistory();
+
+    const handleClick = () => {
+        history.push("/usac");
+    }
         return(
             <div class = "contenedor">
                 <div class ="titulo"><h1>¿De dónde nos visitas?</h1></div>
                 <div class="cards-list">
-                    <div class="card 1">
+                    <div class="card 1" onClick={handleClick}>
                         <div class="card_image"> <img src="https://ik.imagekit.io/peu7i3asaiq/logo-usac-byempacharte_-iIJocM8FvB.png?updatedAt=1631578403795" /> </div>
                         <div class="card_title title-black">
                         <p>USAC</p>
@@ -39,8 +41,7 @@ export default class Perfil extends Component{
                 <img class = "imagen" src ="https://ik.imagekit.io/peu7i3asaiq/CONESIEE_NEGRO_0xBsj6Xhw.png?updatedAt=1631579312932" />
             </div>
           )
-    }
 }
 
 
-
+export default Perfil;
