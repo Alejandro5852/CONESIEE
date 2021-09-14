@@ -47,3 +47,19 @@ h2 {
 .btn-enviar-reg:hover {
     background-image: linear-gradient(to right, #ffecd2, #fcb69f);
 }
+
+@media all and (max-width: 500px) {
+    .in-texto-reg,
+    .combobox,
+    .fechas {
+        background-image: linear-gradient(to right, #84fab0, #8fd3f4);
+        border-color: black;
+        width: 80%;
+        height: 10%;
+        font-size: 30px;
+        text-align: center
+    }
+    .btn-enviar-reg {
+        width: 80%;
+    }
+}

@@ -43,9 +43,9 @@ export default class Usac extends Component {
                         <h1>Registro</h1>
                         <h2>Ingresa tu nombre completo</h2>
                         <input type="text" className="in-texto-reg" name = "nombre" onChange={this.onChange}  required></input>
-                        <h2>Ingresa tu carnet</h2>
+                        <h2>Ingresa tu carnet (sin espacios)</h2>
                         <input type="text" className="in-texto-reg " name = "carne" onChange={this.onChange}  required pattern= "[0-9]*"></input>
-                        <h2>Ingresa tu cui (DPI)</h2>
+                        <h2>Ingresa tu cui (sin espacios)</h2>
                         <input type="text" className="in-texto-reg" name = "dpi" onChange={this.onChange} required pattern= "[0-9]*"></input>
                         <h2>Ingresa tu correo institucional</h2>
                         <input type="email" className="in-texto-reg" name = "email" onChange={this.onChange} required ></input>
