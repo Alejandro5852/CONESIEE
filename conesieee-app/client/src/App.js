@@ -7,17 +7,7 @@ import Extranjeros from './components/Registro/Extranjeros/extranjeros'
 import Perfil from './components/Perfil/Perfil'
 import Poblacion from './components/Registro/PoblacionGeneral/Poblacion'
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      costumer: []
-    }
-  }
-  componentDidMount() {
-    fetch('/api/costumers')
-      .then(res => res.json())
-      .then(costumers => this.setState({ costumers }, () => console.log("Costumers fetched: ", costumers)))
-  }
+
   render() {
     return (
       <Router>

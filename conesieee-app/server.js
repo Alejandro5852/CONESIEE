@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 const pool = require('./helpers/database');
-app.get('/api/costumers', async function(req, res) {
+app.get('/api/conferencias', async function(req, res) {
     try {
-        const query = "show tables";
+        const query = "select * from conferencias";
         const rows = await pool.query(query);
         res.status(200).json(rows);
     } catch (error) {
