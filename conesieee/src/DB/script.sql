@@ -53,8 +53,8 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ieeedb`.`asignacion` (
   `asignacion_id` INT NOT NULL AUTO_INCREMENT,
-  `id_participante` int NOT NULL,
-  `id_conferencia` int NOT NULL,
+  `id_participante` int UNSIGNED NOT NULL,
+  `id_conferencia` int UNSIGNED NOT NULL,
   `fecha` DATETIME NOT NULL DEFAULT NOW(),
   PRIMARY KEY (`asignacion_id`),
   INDEX `fk_variable_participante_idx` (`id_participante` ASC),
@@ -75,7 +75,7 @@ ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `ieeedb`.`asistencia` (
   `asistencia_id` INT NOT NULL AUTO_INCREMENT,
-  `asignacion` int NOT NULL,
+  `asignacion` int UNSIGNED NOT NULL,
   `nota` int NOT NULL,
   `fecha` DATETIME NOT NULL DEFAULT NOW(),
   PRIMARY KEY (`asistencia_id`),
