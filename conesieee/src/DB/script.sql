@@ -52,7 +52,7 @@ ENGINE = InnoDB;
 -- Table `ieeedb`.`action_type`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `ieeedb`.`asignacion` (
-  `asignacion_id` INT NOT NULL AUTO_INCREMENT,
+  `asignacion_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `id_participante` int UNSIGNED NOT NULL,
   `id_conferencia` int UNSIGNED NOT NULL,
   `fecha` DATETIME NOT NULL DEFAULT NOW(),
