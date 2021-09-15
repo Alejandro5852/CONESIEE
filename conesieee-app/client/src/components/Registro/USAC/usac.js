@@ -16,11 +16,10 @@ export default class Usac extends Component {
             .then(conferencias => this.setState({ conferencias }))
         
         let info = [];
-        for(let i = 0; i<length(conferencias); i++){
-            info.push(conferencias.tema + conferencias.area);
+        for(conferencia in this.state.conferencias){
+            info.push(conferencia.tema + " " + conferencia.area);
         }
-        this.setState({info});
-        console.log(info);
+        console.log(info);        
     }
     render() {
         return (
