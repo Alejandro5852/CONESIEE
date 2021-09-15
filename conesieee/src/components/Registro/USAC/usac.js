@@ -41,8 +41,10 @@ export default class Usac extends Component {
                 <div className="caja-registro-usac">
                     <form onSubmit={this.onSubmit}>
                         <h1>Registro</h1>
-                        <h2>Ingresa tu nombre completo</h2>
-                        <input type="text" className="in-texto-reg" name = "nombre" onChange={this.onChange}  required></input>
+                        <h2>Ingresa tus nombres</h2>
+                        <input type="text" className="in-texto-reg" name = "nombres" onChange={this.onChange}  required></input>
+                        <h2>Ingresa tus apellidos</h2>
+                        <input type="text" className="in-texto-reg" name = "apellidos" onChange={this.onChange}  required></input>
                         <h2>Ingresa tu carnet (sin espacios)</h2>
                         <input type="text" className="in-texto-reg " name = "carne" onChange={this.onChange}  required pattern= "[0-9]*"></input>
                         <h2>Ingresa tu cui (sin espacios)</h2>
@@ -53,6 +55,7 @@ export default class Usac extends Component {
                         <select className="combobox" name="tier" id="cars" onChange={this.onChange} required >
                             <option className="combo-item" value="7" >Ingeniería Eléctrica</option>
                             <option className="combo-item" value="7" >Ingeniería Electrónica</option>
+                            <option className="combo-item" value="7" >Ingeniería Mecánica Eléctrica</option>
                         </select>
                         <br />
                         <br />

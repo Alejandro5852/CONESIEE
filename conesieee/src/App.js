@@ -5,6 +5,8 @@ import Usac from './components/Registro/USAC/usac'
 import Otros from './components/Registro/OtrasUniversidades/otros'
 import Extranjeros from './components/Registro/Extranjeros/extranjeros'
 import Perfil from './components/Perfil/Perfil'
+import Poblacion from './components/Registro/PoblacionGeneral/Poblacion'
+
 
 /* function Helloworld(props) {
   return (
@@ -105,6 +107,10 @@ class App extends Component {
         </Route>         
         <Route exact path="/extranjeros" render={() => 
           {return <div className = "contenedor-extranjeros"><Extranjeros/></div>}
+        }>
+        </Route>  
+        <Route exact path="/poblacion" render={() => 
+          {return <div className = "contenedor-poblacion"><Poblacion/></div>}
         }>
         </Route>  
       </Router>);

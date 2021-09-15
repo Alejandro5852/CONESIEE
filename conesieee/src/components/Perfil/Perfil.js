@@ -16,6 +16,9 @@ const Perfil = ()=>{
     const toExtrangeros = () => {
         history.push("/extranjeros");
     }
+    const toPoblacion= () => {
+        history.push("/poblacion");
+    }
         return(
             <div class = "contenedor">
                 <div class ="titulo"><h1>¿De dónde nos visitas?</h1></div>
@@ -42,6 +45,14 @@ const Perfil = ()=>{
                         </div>
                         <div class="card_title title-black">
                             <p>Extranjero</p>
+                        </div>
+                    </div>
+                    <div class="card 3" onClick={toPoblacion}>
+                        <div class="card_image">
+                            <img src="https://ik.imagekit.io/peu7i3asaiq/istockphoto-1162454484-612x612_cmBNuCH9Y.jpg?updatedAt=1631645465327" />
+                        </div>
+                        <div class="card_title title-black">
+                            <p>Población General</p>
                         </div>
                     </div>
                 </div>

@@ -40,8 +40,10 @@ export default class Otros extends Component {
                 <div className="caja-registro">
                     <form onSubmit={this.onSubmit}>
                         <h1>Registro</h1>
-                        <h2>Ingresa tu nombre completo</h2>
-                        <input type="text" className="in-texto-reg" name = "nombre" onChange={this.onChange}  required></input>
+                        <h2>Ingresa tus nombres</h2>
+                        <input type="text" className="in-texto-reg" name = "nombres" onChange={this.onChange}  required></input>
+                        <h2>Ingresa tus apellidos</h2>
+                        <input type="text" className="in-texto-reg" name = "apellidos" onChange={this.onChange}  required></input>
                         <h2>Ingresa tu cui (sin espacios)</h2>
                         <input type="text" className="in-texto-reg" name = "dpi" onChange={this.onChange} required pattern= "[0-9]*"></input>
                         <h2>Ingresa tu correo personal</h2>

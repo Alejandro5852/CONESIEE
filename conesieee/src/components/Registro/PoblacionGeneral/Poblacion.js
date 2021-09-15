@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
-import './extranjeros.css'
+import './Poblacion.css'
 
-export default class Extranjeros extends Component {
+export default class Poblacion extends Component {
 
 
     onChange = e => {
@@ -45,14 +44,10 @@ export default class Extranjeros extends Component {
                         <input type="text" className="in-texto-reg" name = "nombres" onChange={this.onChange}  required></input>
                         <h2>Ingresa tus apellidos</h2>
                         <input type="text" className="in-texto-reg" name = "apellidos" onChange={this.onChange}  required></input>
-                        <h2>Ingresa tu No. de pasaporte (sin espacios)</h2>
+                        <h2>Ingresa tu cui (sin espacios)</h2>
                         <input type="text" className="in-texto-reg" name = "dpi" onChange={this.onChange} required pattern= "[0-9]*"></input>
                         <h2>Ingresa tu correo personal</h2>
                         <input type="email" className="in-texto-reg" name = "email" onChange={this.onChange} required ></input>
-                        <h2>Ingresa tu carrera <br/>(puedes poner "participante")</h2>
-                        <input type="text" className="in-texto-reg" name = "nombre" onChange={this.onChange}  required></input>
-                        <h2>Ingresa tu universidad <br/>(puedes poner "poblacion general")</h2>
-                        <input type="text" className="in-texto-reg" name = "nombre" onChange={this.onChange}  required></input>                        
                         <br />
                         <br />
                         <input type="submit" className="btn-enviar-reg" ></input>
