@@ -59,12 +59,12 @@ CREATE TABLE IF NOT EXISTS `ieeedb`.`asignacion` (
   PRIMARY KEY (`asignacion_id`),
   INDEX `fk_variable_participante_idx` (`id_participante` ASC),
   INDEX `fk_variable_conferencia_idx` (`id_conferencia` ASC),
-CONSTRAINT `fk_variable_participante`
+ CONSTRAINT `fk_variable_participante_idx`
     FOREIGN KEY (`id_participante`)
     REFERENCES `ieeedb`.`participante` (`participante_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_variable_conferencia`
+  CONSTRAINT `fk_variable_participante_idx`
     FOREIGN KEY (`id_conferencia`)
     REFERENCES `ieeedb`.`conferencia` (`conferencia_id`)
     ON DELETE NO ACTION
