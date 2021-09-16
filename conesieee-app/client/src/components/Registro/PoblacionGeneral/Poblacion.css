@@ -48,6 +48,15 @@ h1 {
     background-image: linear-gradient(to right, #ffecd2, #fcb69f);
 }
 
+.conf-poblacio{
+    background-image: linear-gradient(to right, #84fab0, #8fd3f4);
+    border-color: black;
+    width: 50%;
+    height: 10%;
+    font-size: 30px;
+    left:25%;
+    text-align: center
+}
 @media all and (max-width: 500px) {
     .in-texto-reg,
     .combobox,
@@ -61,5 +70,12 @@ h1 {
     }
     .btn-enviar-reg {
         width: 80%;
+    }
+    .conf-poblacio{
+        width: 80%;
+        height: 10%;
+        font-size: 30px;
+        left:10%;
+        padding-bottom: 5%;
     }
 }

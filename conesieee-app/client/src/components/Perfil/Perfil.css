@@ -69,6 +69,22 @@
     color: black;
 }
 
+table, th, td {
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+}
+table{
+    position:relative;
+    width: 95%;
+    left:2.5%;
+    background-color: #CFD0D2;
+}
+.aviso{
+    display:none;
+}
+
 @media all and (max-width: 500px) {
     .card-list {
         /* On small screens, we are no longer using row direction but column */
@@ -86,7 +102,19 @@
     .titulo {
         padding-top: 10%;
     }
+    
+    table{
+        display:none;
+    }
+    .aviso {
+        text-align: center;
+        padding-top: 5%;
+        display:block;
+    }
+    
 }
+
+
 
 
 /*

@@ -7,7 +7,6 @@ import Extranjeros from './components/Registro/Extranjeros/extranjeros'
 import Perfil from './components/Perfil/Perfil'
 import Poblacion from './components/Registro/PoblacionGeneral/Poblacion'
 class App extends Component {
-
   render() {
     return (
       <Router>
