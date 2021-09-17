@@ -6,6 +6,9 @@ const Perfil = () => {
 
     const [conferencias, setConferencias] = useState(null);
 
+    const [identificiacion, setIdentificacion] = useState("");
+
+    const[asignadas, setAsignadas] = useState(null);
     React.useEffect(() => {
         fetch('/api/conferencias')
             .then(res => {
@@ -30,6 +33,25 @@ const Perfil = () => {
     }
     const toPoblacion = () => {
         history.push("/poblacion");
+    }
+    function onChange(e) {
+        setIdentificacion(e.target.value);
+    }
+    function onSubmit(e) {
+        const info = {identificacion: identificiacion};
+        const requestOptions = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(info)
+        };
+        fetch('/api/asignaciones', requestOptions)
+            .then(response => response.json())
+            .then(data => { setAsignadas(null); setAsignadas(data) });
+        
+        e.preventDefault();
+
     }
     return (
         <div className="contenedor">
@@ -82,6 +104,29 @@ const Perfil = () => {
                     </tr>
                     {conferencias && conferencias.map((conferencia) => (
                         <tr key={conferencia.id}><td>{conferencia.tema}</td><td>{conferencia.expositor}</td><td>{conferencia.area}</td><td>{conferencia.fecha}</td><td>{conferencia.inicio}</td><td>{conferencia.fin}</td></tr>
+                    ))}
+                </thead>
+            </table>
+            <div className="caja-registro-usac dev">
+                <form onSubmit={onSubmit}>
+                    <h1>Ver mis conferencias asignadas</h1>
+                    <h2>Ingresa tu cui o No.Pasaporte(sin espacios)</h2>
+                    <input type="text" className="in-texto-reg" name="cui" onChange={onChange} required pattern="[0-9]*"></input>
+                    <input type="submit" className="btn-enviar-reg" ></input>
+                </form>
+            </div>
+            <h3 className="aviso">Voltea tu teléfono para ver la tabla de asignaciones</h3>
+            <table className="tabla-conferencias">
+                <thead>
+                    <tr>
+                        <th>Fecha Asignacion</th>
+                        <th>Conferencia</th>
+                        <th>Fecha de conferencia</th>
+                        <th>Hora inicio</th>
+                        <th>Hora Fin</th>
+                    </tr>
+                    {asignadas && asignadas.map((conferencia) => (
+                        <tr key={conferencia.asignacion_id}><td>{conferencia.fecha_asignacion}</td><td>{conferencia.tema_conferencia}</td><td>{conferencia.fecha_conferencia}</td><td>{conferencia.hora_inicio}</td><td>{conferencia.hora_fin}</td></tr>
                     ))}
                 </thead>
             </table>

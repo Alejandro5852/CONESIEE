@@ -84,6 +84,17 @@ table{
 .aviso{
     display:none;
 }
+.in-texto-reg{
+    width: 50%;
+    height: 10%;
+    font-size: 30px;
+    text-align: center;
+    left:80%;
+}
+
+.dev{
+    background-image: linear-gradient(to right, #B7F8DB, #50A7C2);  
+}
 
 @media all and (max-width: 500px) {
     .card-list {
@@ -103,7 +114,7 @@ table{
         padding-top: 10%;
     }
     
-    table{
+    .tabla-conferencias{
         display:none;
     }
     .aviso {
