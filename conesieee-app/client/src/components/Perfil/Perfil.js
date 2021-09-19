@@ -21,7 +21,7 @@ const Perfil = () => {
 
     const [asignadas, setAsignadas] = useState(null);
     React.useEffect(() => {
-        fetch('/api/conferencias')
+        fetch('http://164.90.210.249/api/conferencias')
             .then(res => {
                 return res.json();
             })
@@ -60,7 +60,7 @@ const Perfil = () => {
             },
             body: JSON.stringify(info)
         };
-        fetch('/api/asignaciones', requestOptions)
+        fetch('http://164.90.210.249/api/asignaciones', requestOptions)
             .then(response => response.json())
             .then(data => { setAsignadas(null); setAsignadas(data) });
         const requestOptions2 = {
@@ -71,7 +71,7 @@ const Perfil = () => {
             body: JSON.stringify(info)
         };
 
-        fetch('/api/faltantes', requestOptions2)
+        fetch('http://164.90.210.249/api/faltantes', requestOptions2)
             .then(response => response.json())
             .then(datos => { setFaltantes(datos) });
 
@@ -82,7 +82,7 @@ const Perfil = () => {
             },
             body: JSON.stringify(info)
         };
-        fetch('/api/asignacionesCaja', requestOptions3)
+        fetch('http://164.90.210.249/api/asignacionesCaja', requestOptions3)
             .then(response => response.json())
             .then(datos => { setAsignaciones(datos) });
         e.preventDefault();
@@ -97,7 +97,7 @@ const Perfil = () => {
             },
             body: JSON.stringify(info)
         };
-        fetch('/api/newAsignacion', requestOptions2);
+        fetch('http://164.90.210.249/api/newAsignacion', requestOptions2);
     }
 
     function eliminarAsignacion(e) {
@@ -109,7 +109,7 @@ const Perfil = () => {
             },
             body: JSON.stringify(info)
         };
-        fetch('/api/eliminarAsign', requestOptions2);
+        fetch('http://164.90.210.249/api/eliminarAsign', requestOptions2);
     }
     return (
         <div className="contenedor">

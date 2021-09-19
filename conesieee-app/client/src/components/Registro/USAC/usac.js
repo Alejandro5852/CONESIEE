@@ -34,7 +34,7 @@ const Usac = (props) => {
 
 
     React.useEffect(() => {
-        fetch('/api/infoConf')
+        fetch('http://164.90.210.249/api/infoConf')
             .then(res => {
                 return res.json();
             })
@@ -78,7 +78,7 @@ const Usac = (props) => {
                 },
                 body: JSON.stringify(info)
             };
-            fetch('/api/getUsrU', requestOptions)
+            fetch('http://164.90.210.249/api/getUsrU', requestOptions)
                 .then(response => response.json())
                 .then(data => { if (data.length > 0) { alert("Usted ya se encuentra inscrito") } else { insertUser(info) } });
         } else {
@@ -89,7 +89,7 @@ const Usac = (props) => {
                 },
                 body: JSON.stringify(info)
             };
-            fetch('/api/getUsr', requestOptions)
+            fetch('http://164.90.210.249/api/getUsr', requestOptions)
                 .then(response => response.json())
                 .then(data => { if (data.length > 0) { alert("Usted ya se encuentra inscrito") } else { insertUser(info) } });
         }
@@ -104,7 +104,7 @@ const Usac = (props) => {
             },
             body: JSON.stringify(info)
         };
-        fetch('/api/newUser', requestOptions);
+        fetch('http://164.90.210.249/api/newUser', requestOptions);
         const requestOptions2 = {
             method: 'POST',
             headers: {
@@ -112,7 +112,7 @@ const Usac = (props) => {
             },
             body: JSON.stringify(info)
         };
-        fetch('/api/newAsignacion', requestOptions2);
+        fetch('http://164.90.210.249/api/newAsignacion', requestOptions2);
         alert("Su inscripción ha sido registrada exitosamente, en la pagina principal, puede revisar su inscripcion");
     }
     if (props.name == "usac") {
