@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS `ieeedb`.`participante` (
   `carrera` VARCHAR(100) NULL,
   `facultad` VARCHAR(100) NULL,
   `universidad` VARCHAR(100) NULL,
+  `carnet` VARCHAR(25) NULL,
    PRIMARY KEY (`participante_id`))
 ENGINE = InnoDB;
 
@@ -42,6 +43,7 @@ CREATE TABLE IF NOT EXISTS `ieeedb`.`conferencia` (
   `conferencia_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `tema` VARCHAR(250) NOT NULL,
   `expositor` VARCHAR(150) NOT NULL,
+  `area` VARCHAR(50) NOT NULL,
   `inicio` DATETIME NOT NULL DEFAULT NOW(),
   `fin` DATETIME NOT NULL DEFAULT NOW(),
   PRIMARY KEY (`conferencia_id`))

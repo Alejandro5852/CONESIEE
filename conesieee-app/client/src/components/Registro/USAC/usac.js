@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './usac.css'
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated';
+import { useHistory } from 'react-router-dom';
 
 const animatedComponents = makeAnimated();
 
@@ -28,6 +29,9 @@ const Usac = (props) => {
     const [universidad, setUniversidad] = useState("Poblacion General");
 
     const [size, setSize] = useState(-1);
+
+    const history = useHistory();
+
 
     React.useEffect(() => {
         fetch('/api/infoConf')
@@ -76,7 +80,7 @@ const Usac = (props) => {
             };
             fetch('/api/getUsrU', requestOptions)
                 .then(response => response.json())
-                .then(data => { if (data.length > 0) { alert("YA ESTÁS ASIGNADO!!!") } else { insertUser(info) } });
+                .then(data => { if (data.length > 0) { alert("Usted ya se encuentra inscrito") } else { insertUser(info) } });
         } else {
             const requestOptions = {
                 method: 'POST',
@@ -87,9 +91,9 @@ const Usac = (props) => {
             };
             fetch('/api/getUsr', requestOptions)
                 .then(response => response.json())
-                .then(data => { if (data.length > 0) { alert("YA ESTÁS ASIGNADO!!!") } else { insertUser(info) } });
+                .then(data => { if (data.length > 0) { alert("Usted ya se encuentra inscrito") } else { insertUser(info) } });
         }
-        e.preventDefault();
+        history.push("/");
     }
 
     function insertUser(info) {
@@ -109,19 +113,21 @@ const Usac = (props) => {
             body: JSON.stringify(info)
         };
         fetch('/api/newAsignacion', requestOptions2);
+        alert("Su inscripción ha sido registrada exitosamente, en la pagina principal, puede revisar su inscripcion");
     }
     if (props.name == "usac") {
         return (
             <div className="caja-registro-usac">
                 <form onSubmit={onSubmit}>
                     <h1>Registro</h1>
+                    <h3>Toda la información ingresada en el formulario debe estar escrita correctamente o no se proporcionara diploma </h3>
                     <h2>Ingresa tus nombres</h2>
                     <input type="text" className="in-texto-reg" name="nombres" onChange={onChange} required></input>
                     <h2>Ingresa tus apellidos</h2>
                     <input type="text" className="in-texto-reg" name="apellidos" onChange={onChange} required></input>
-                    <h2>Ingresa tu carnet (sin espacios)</h2>
+                    <h2>Ingresa tu carnet (sin espacios, solo numeros)</h2>
                     <input type="text" className="in-texto-reg " name="carnet" onChange={onChange} required pattern="[0-9]*"></input>
-                    <h2>Ingresa tu cui (sin espacios)</h2>
+                    <h2>Ingresa tu cui (sin espacios, solo numeros)</h2>
                     <input type="text" className="in-texto-reg" name="cui" onChange={onChange} required pattern="[0-9]*"></input>
                     <h2>Ingresa tu correo institucional</h2>
                     <input type="email" className="in-texto-reg" name="correo" onChange={onChange} required ></input>
@@ -150,11 +156,12 @@ const Usac = (props) => {
             <div className="caja-registro-usac">
                 <form onSubmit={onSubmit}>
                     <h1>Registro</h1>
+                    <h3>Toda la información ingresada en el formulario debe estar escrita correctamente o no se proporcionara diploma </h3>
                     <h2>Ingresa tus nombres</h2>
                     <input type="text" className="in-texto-reg" name="nombres" onChange={onChange} required></input>
                     <h2>Ingresa tus apellidos</h2>
                     <input type="text" className="in-texto-reg" name="apellidos" onChange={onChange} required></input>
-                    <h2>Ingresa tu cui (sin espacios)</h2>
+                    <h2>Ingresa tu cui (sin espacios, solo numeros)</h2>
                     <input type="text" className="in-texto-reg" name="cui" onChange={onChange} required pattern="[0-9]*"></input>
                     <h2>Ingresa tu correo institucional</h2>
                     <input type="email" className="in-texto-reg" name="correo" onChange={onChange} required ></input>
@@ -183,11 +190,12 @@ const Usac = (props) => {
             <div className="caja-registro-usac">
                 <form onSubmit={onSubmit}>
                     <h1>Registro</h1>
+                    <h3>Toda la información ingresada en el formulario debe estar escrita correctamente o no se proporcionara diploma </h3>
                     <h2>Ingresa tus nombres</h2>
                     <input type="text" className="in-texto-reg" name="nombres" onChange={onChange} required></input>
                     <h2>Ingresa tus apellidos</h2>
                     <input type="text" className="in-texto-reg" name="apellidos" onChange={onChange} required></input>
-                    <h2>Ingresa tu cui (sin espacios)</h2>
+                    <h2>Ingresa tu cui (sin espacios, solo numeros)</h2>
                     <input type="text" className="in-texto-reg" name="cui" onChange={onChange} required pattern="[0-9]*"></input>
                     <h2>Ingresa tu correo</h2>
                     <input type="email" className="in-texto-reg" name="correo" onChange={onChange} required ></input>
@@ -208,11 +216,12 @@ const Usac = (props) => {
             <div className="caja-registro-usac">
                 <form onSubmit={onSubmit}>
                     <h1>Registro</h1>
+                    <h3>Toda la información ingresada en el formulario debe estar escrita correctamente o no se proporcionara diploma </h3>
                     <h2>Ingresa tus nombres</h2>
                     <input type="text" className="in-texto-reg" name="nombres" onChange={onChange} required></input>
                     <h2>Ingresa tus apellidos</h2>
                     <input type="text" className="in-texto-reg" name="apellidos" onChange={onChange} required></input>
-                    <h2>Ingresa tu No. Pasaporte (sin espacios)</h2>
+                    <h2>Ingresa tu No. Pasaporte (sin espacios, solo numeros)</h2>
                     <input type="text" className="in-texto-reg" name="cui" onChange={onChange} required pattern="[0-9]*"></input>
                     <h2>Ingresa tu correo</h2>
                     <input type="email" className="in-texto-reg" name="correo" onChange={onChange} required ></input>
@@ -223,6 +232,40 @@ const Usac = (props) => {
                     <br />
                     <br />
                     <h2>Selecciona las conferencias a las que asistirás</h2>
+                    <Select className="conf-usac" name="conferencias"
+                        closeMenuOnSelect={false}
+                        components={animatedComponents}
+                        isMulti
+                        options={conferencias}
+                        onChange={setSelected}
+                    />
+                    <input type="submit" className="btn-enviar-reg" ></input>
+                </form>
+            </div>
+        )
+    } else if (props.name == "catedratico") {
+        return (
+            <div className="caja-registro-usac">
+                <form onSubmit={onSubmit}>
+                    <h1>Registro</h1>
+                    <h3>Toda la información ingresada en el formulario debe estar escrita correctamente o no se proporcionara diploma </h3>
+                    <h2>Ingrese sus nombres</h2>
+                    <input type="text" className="in-texto-reg" name="nombres" onChange={onChange} required></input>
+                    <h2>Ingrese sus apellidos</h2>
+                    <input type="text" className="in-texto-reg" name="apellidos" onChange={onChange} required></input>
+                    <h2>Ingrese su registro personal (sin espacios, solo numeros)</h2>
+                    <input type="text" className="in-texto-reg " name="carnet" onChange={onChange} required pattern="[0-9]*"></input>
+                    <h2>Ingrese su cui (sin espacios, solo numeros)</h2>
+                    <input type="text" className="in-texto-reg" name="cui" onChange={onChange} required pattern="[0-9]*"></input>
+                    <h2>Ingrese su correo institucional</h2>
+                    <input type="email" className="in-texto-reg" name="correo" onChange={onChange} required ></input>
+                    <h2>Ingrese el curso que imparte</h2>
+                    <input type="text" className="in-texto-reg" name="carrera" onChange={onChange} required></input>
+                    <h2>Ingrese su área o escuela</h2>
+                    <input type="text" className="in-texto-reg" name="universidad" onChange={onChange} required></input>
+                    <br />
+                    <br />
+                    <h2>Seleccione las conferencias a las que asistirá</h2>
                     <Select className="conf-usac" name="conferencias"
                         closeMenuOnSelect={false}
                         components={animatedComponents}

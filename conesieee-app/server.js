@@ -7,19 +7,22 @@ app.use(bodyParser.json());
 app.get('/api/conferencias', async function (req, res) {
     try {
         const query = "select conferencia_id as id, tema, expositor, area, DATE_FORMAT(inicio, '%d/%m/%y') as fecha, DATE_FORMAT(inicio, '%r') as inicio,  DATE_FORMAT(fin, '%r') as fin from conferencia order by conferencia.inicio, inicio asc";
-        const rows = await pool.query(query);
         console.log(query);
+        const rows = await pool.query(query);
         res.status(200).json(rows);
     } catch (error) {
         res.status(400).send(error.message);
     }
 });
 
+/*
+select conferencia_id as value, CONCAT(tema," (",DATE_FORMAT(inicio, '%d/%m/%y'),")") as label from conferencia except select id_conferencia, CONCAT(conferencia.tema," (",DATE_FORMAT(conferencia.inicio, '%d/%m/%y'),")") from asignacion join conferencia on id_conferencia = conferencia_id where id_participante = (select participante_id from participante where identificacion = '123456789');
+*/
 app.get('/api/infoConf', async function (req, res) {
     try {
         const query = "select conferencia_id as value, CONCAT(tema, \"  (\",DATE_FORMAT(inicio, '%d/%m/%y'), \")\") as label from conferencia order by conferencia.inicio asc";
-        const rows = await pool.query(query);
         console.log(query);
+        const rows = await pool.query(query);
         res.status(200).json(rows);
     } catch (error) {
         res.status(400).send(error.message);
@@ -87,5 +90,48 @@ app.post('/api/asignaciones', async function (req, res) {
     }
 });
 
+app.post('/api/asignacionesCaja', async function (req, res) {
+    try {
+        //const data = { nombres: nombre, apellidos: apellido, carnet: carnet, identificacion: cui, correo: correo, conferencias: selected };
+        const query = "select asignacion_id as value, conferencia.tema as label from asignacion join conferencia on id_conferencia = conferencia_id where id_participante = (select participante_id from participante where identificacion = '" + req.body.identificacion + "')";
+        console.log(query);
+        const rows = await pool.query(query);
+        res.status(200).json(rows);
+        //res.status(200).json(rows);
+    } catch (error) {
+        res.status(400).json({ status: 400 });
+    }
+});
+
+app.post('/api/faltantes', async function (req, res) {
+    try {
+        //const data = { nombres: nombre, apellidos: apellido, carnet: carnet, identificacion: cui, correo: correo, conferencias: selected };
+        const query = "select conferencia_id as value, CONCAT(tema,\" (\",DATE_FORMAT(inicio, '%d/%m/%y'),\")\") as label from conferencia except select id_conferencia, CONCAT(conferencia.tema,\" (\",DATE_FORMAT(conferencia.inicio, '%d/%m/%y'),\")\") from asignacion join conferencia on id_conferencia = conferencia_id where id_participante = (select participante_id from participante where identificacion = '"+ req.body.identificacion + "')";
+        console.log(query);
+        const rows = await pool.query(query);
+        res.status(200).json(rows);
+        //res.status(200).json(rows);
+    } catch (error) {
+        res.status(400).json({ status: 400 });
+    }
+});
+
+app.post('/api/eliminarAsign', async function (req, res) {
+    try {
+        //const data = { nombres: nombre, apellidos: apellido, carnet: carnet, identificacion: cui, correo: correo, conferencias: selected };
+        for (var i = 0; i < req.body.conferencias.length; i++) {
+            const query = "delete from asignacion where asignacion_id = '"+req.body.conferencias[i].value + "'";
+            await pool.query(query);
+            console.log(query);
+        }
+        //res.status(200).json(rows);
+    } catch (error) {
+        res.status(400).json({ status: 400 });
+    }
+});
+
 const port = 5000;
 app.listen(port, () => console.log(`Servidor escuchando en ${port}`));
+
+
+// delete from asignacion where asignacion_id='101';

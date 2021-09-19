@@ -95,7 +95,27 @@ table{
 .dev{
     background-image: linear-gradient(to right, #B7F8DB, #50A7C2);  
 }
+.ops{
+    padding-top: 5%;
+}
 
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 100%;
+    width: 80%;
+    left:10%;
+}
+.trash{
+    cursor:pointer;
+    background-color: black;
+    color:white;
+}
+@media all and (max-width: 800px) {
+    .title{
+        display: none;
+    }
+}
 @media all and (max-width: 500px) {
     .card-list {
         /* On small screens, we are no longer using row direction but column */
@@ -122,6 +142,9 @@ table{
         padding-top: 5%;
         display:block;
     }
+
+    
+
     
 }
 

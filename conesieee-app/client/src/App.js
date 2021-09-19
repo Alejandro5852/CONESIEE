@@ -26,6 +26,9 @@ class App extends Component {
         <Route exact path="/poblacion" render={() => { return <div className="contenedor-poblacion"><Usac name = "poblacion" /></div> }
         }>
         </Route>
+        <Route exact path="/catedratico" render={() => { return <div className="contenedor-catedratico"><Usac name = "catedratico" /></div> }
+        }>
+        </Route>
       </Router>);
   }
 }

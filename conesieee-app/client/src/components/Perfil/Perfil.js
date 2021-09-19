@@ -1,14 +1,25 @@
 import React, { useState } from 'react'
 import './Perfil.css'
 import { useHistory } from 'react-router-dom';
+import Select from 'react-select'
+import makeAnimated from 'react-select/animated';
+const animatedComponents = makeAnimated();
 
 const Perfil = () => {
 
     const [conferencias, setConferencias] = useState(null);
 
+    const [faltantes, setFaltantes] = useState(null);
+
+    const [selected, setSelected] = useState([]);
+
     const [identificiacion, setIdentificacion] = useState("");
 
-    const[asignadas, setAsignadas] = useState(null);
+    const [id, setId] = useState("");
+
+    const [asignaciones, setAsignaciones] = useState(null);
+
+    const [asignadas, setAsignadas] = useState(null);
     React.useEffect(() => {
         fetch('/api/conferencias')
             .then(res => {
@@ -34,11 +45,14 @@ const Perfil = () => {
     const toPoblacion = () => {
         history.push("/poblacion");
     }
+    const toCatedraticos = () => {
+        history.push("/catedratico");
+    }
     function onChange(e) {
         setIdentificacion(e.target.value);
     }
     function onSubmit(e) {
-        const info = {identificacion: identificiacion};
+        const info = { identificacion: identificiacion };
         const requestOptions = {
             method: 'POST',
             headers: {
@@ -49,9 +63,53 @@ const Perfil = () => {
         fetch('/api/asignaciones', requestOptions)
             .then(response => response.json())
             .then(data => { setAsignadas(null); setAsignadas(data) });
-        
-        e.preventDefault();
+        const requestOptions2 = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(info)
+        };
 
+        fetch('/api/faltantes', requestOptions2)
+            .then(response => response.json())
+            .then(datos => { setFaltantes(datos) });
+
+        const requestOptions3 = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(info)
+        };
+        fetch('/api/asignacionesCaja', requestOptions3)
+            .then(response => response.json())
+            .then(datos => { setAsignaciones(datos) });
+        e.preventDefault();
+    }
+
+    function changeAsignacion(e) {
+        const info = { identificacion: identificiacion, conferencias: selected };
+        const requestOptions2 = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(info)
+        };
+        fetch('/api/newAsignacion', requestOptions2);
+    }
+
+    function eliminarAsignacion(e) {
+        const info = { identificacion: identificiacion, conferencias: selected };
+        const requestOptions2 = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(info)
+        };
+        fetch('/api/eliminarAsign', requestOptions2);
     }
     return (
         <div className="contenedor">
@@ -87,6 +145,14 @@ const Perfil = () => {
                     </div>
                     <div className="card_title title-black">
                         <p>Población General</p>
+                    </div>
+                </div>
+                <div className="card 3" onClick={toCatedraticos}>
+                    <div className="card_image">
+                        <img src="https://ik.imagekit.io/peu7i3asaiq/images_rXWisFdEG.jpg?updatedAt=1631993636837" />
+                    </div>
+                    <div className="card_title title-black">
+                        <p>Catedráticos</p>
                     </div>
                 </div>
             </div>
@@ -130,7 +196,38 @@ const Perfil = () => {
                     ))}
                 </thead>
             </table>
+            {asignadas!=null &&asignadas.length>0 &&<div className="caja-registro-usac dev ops">
+                <form onSubmit={eliminarAsignacion}>
+                    <h2>Selecciona las conferencias que deseas eliminar de tu asignacion</h2>
+                    <Select className="conf-usac" name="conferencias"
+                        closeMenuOnSelect={false}
+                        components={animatedComponents}
+                        isMulti
+                        options={asignaciones}
+                        onChange={setSelected}
+                    />
+                    <input type="submit" className="btn-enviar-reg" ></input>
+                </form>
+            </div>}
+            {asignadas!=null && asignadas.length>0&&<div className="caja-registro-usac dev ops">
+                <form onSubmit={changeAsignacion}>
+                    <h2>Selecciona las conferencias que desees agregar a tu asignacion</h2>
+                    <Select className="conf-usac" name="conferencias"
+                        closeMenuOnSelect={false}
+                        components={animatedComponents}
+                        isMulti
+                        options={faltantes}
+                        onChange={setSelected}
+                    />
+                    <input type="submit" className="btn-enviar-reg" ></input>
+                </form>
+            </div>}
+            <div className="title">
+                <h1>En caso de invonveniente o dudas escribir al siguiente correo: difusionconesieeusac@gmail.com</h1>
+            </div>
             <img className="imagen" src="https://ik.imagekit.io/peu7i3asaiq/CONESIEE_NEGRO_0xBsj6Xhw.png?updatedAt=1631579312932" />
+            <img className="imagen" src="https://ik.imagekit.io/peu7i3asaiq/JUNTA-DIRECTIVA-CONESIEE-2021_1_J1ChwEh3U.jpg?updatedAt=1632033982268" />
+            <img className="imagen" src="https://ik.imagekit.io/peu7i3asaiq/JUNTA-DIRECTIVA-CONESIEE-2021_2_BmVHP_pGhN.jpg?updatedAt=1632033961390" />
         </div>
     )
 }
