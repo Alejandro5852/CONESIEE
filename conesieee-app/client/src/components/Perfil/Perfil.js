@@ -225,6 +225,8 @@ const Perfil = () => {
             <div className="title">
                 <h1>En caso de invonveniente o dudas escribir al siguiente correo: difusionconesieeusac@gmail.com</h1>
             </div>
+            <img className="imagen" src="https://ik.imagekit.io/peu7i3asaiq/Cronograma_Eléctrica_FB__1__xpO84-jNC.png?updatedAt=1632171247431" />
+            <img className="imagen" src="https://ik.imagekit.io/peu7i3asaiq/Cronograma_Electrónica_FB__1__ou2zrGYh4l.png?updatedAt=1632171754171" />
             <img className="imagen" src="https://ik.imagekit.io/peu7i3asaiq/CONESIEE_NEGRO_0xBsj6Xhw.png?updatedAt=1631579312932" />
             <img className="imagen" src="https://ik.imagekit.io/peu7i3asaiq/JUNTA-DIRECTIVA-CONESIEE-2021_1_J1ChwEh3U.jpg?updatedAt=1632033982268" />
             <img className="imagen" src="https://ik.imagekit.io/peu7i3asaiq/JUNTA-DIRECTIVA-CONESIEE-2021_2_BmVHP_pGhN.jpg?updatedAt=1632033961390" />

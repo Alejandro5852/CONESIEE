@@ -5,7 +5,7 @@ const pool = require('./helpers/database');
 const cors = require("cors");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app(cors());
+app.use(cors());
 app.get('/api/conferencias', async function (req, res) {
     try {
         const query = "select conferencia_id as id, tema, expositor, area, DATE_FORMAT(inicio, '%d/%m/%y') as fecha, DATE_FORMAT(inicio, '%r') as inicio,  DATE_FORMAT(fin, '%r') as fin from conferencia order by conferencia.inicio, inicio asc";

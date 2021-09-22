@@ -51,8 +51,12 @@ const Usac = (props) => {
             setApellido(e.target.value);
         } else if (e.target.name == "carnet") {
             setCarnet(e.target.value);
-            setFacultad("Ingenieria");
-            setUniversidad("Usac");
+            if (props.name == "catedratico") {
+                setFacultad("CATEDRATICO");
+            } else {
+                setUniversidad("Usac");
+                setFacultad("Ingenieria");
+            }
         } else if (e.target.name == "cui") {
             setCui(e.target.value);
         } else if (e.target.name == "correo") {
@@ -146,6 +150,7 @@ const Usac = (props) => {
                         isMulti
                         options={conferencias}
                         onChange={setSelected}
+                        required
                     />
                     <input type="submit" className="btn-enviar-reg" ></input>
                 </form>
@@ -180,6 +185,7 @@ const Usac = (props) => {
                         isMulti
                         options={conferencias}
                         onChange={setSelected}
+                        required
                     />
                     <input type="submit" className="btn-enviar-reg" ></input>
                 </form>
@@ -206,6 +212,7 @@ const Usac = (props) => {
                         isMulti
                         options={conferencias}
                         onChange={setSelected}
+                        required
                     />
                     <input type="submit" className="btn-enviar-reg" ></input>
                 </form>
@@ -238,6 +245,7 @@ const Usac = (props) => {
                         isMulti
                         options={conferencias}
                         onChange={setSelected}
+                        required
                     />
                     <input type="submit" className="btn-enviar-reg" ></input>
                 </form>
@@ -272,6 +280,7 @@ const Usac = (props) => {
                         isMulti
                         options={conferencias}
                         onChange={setSelected}
+                        required
                     />
                     <input type="submit" className="btn-enviar-reg" ></input>
                 </form>
