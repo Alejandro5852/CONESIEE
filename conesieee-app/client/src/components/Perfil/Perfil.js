@@ -20,6 +20,8 @@ const Perfil = () => {
     const [asignaciones, setAsignaciones] = useState(null);
 
     const [asignadas, setAsignadas] = useState(null);
+
+    const [existe, setExiste] = useState(false);
     React.useEffect(() => {
         fetch('http://164.90.210.249/api/conferencias')
             .then(res => {
@@ -52,7 +54,7 @@ const Perfil = () => {
         setIdentificacion(e.target.value);
     }
     function onSubmit(e) {
-        const info = { identificacion: identificiacion };
+        const info = { identificacion: identificiacion, correo: "vacio" };
         const requestOptions = {
             method: 'POST',
             headers: {
@@ -85,6 +87,17 @@ const Perfil = () => {
         fetch('http://164.90.210.249/api/asignacionesCaja', requestOptions3)
             .then(response => response.json())
             .then(datos => { setAsignaciones(datos) });
+
+        const requestOptions4 = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(info)
+        };
+        fetch('http://164.90.210.249/api/getUsr', requestOptions4)
+            .then(response => response.json())
+            .then(data => { if (data.length > 0) { setExiste(true) }else {setExiste(false)}});
         e.preventDefault();
     }
 
@@ -196,7 +209,7 @@ const Perfil = () => {
                     ))}
                 </thead>
             </table>
-            {asignadas!=null &&asignadas.length>0 &&<div className="caja-registro-usac dev ops">
+            {asignadas != null && asignadas.length > 0 && <div className="caja-registro-usac dev ops">
                 <form onSubmit={eliminarAsignacion}>
                     <h2>Selecciona las conferencias que deseas eliminar de tu asignacion</h2>
                     <Select className="conf-usac" name="conferencias"
@@ -209,7 +222,7 @@ const Perfil = () => {
                     <input type="submit" className="btn-enviar-reg" ></input>
                 </form>
             </div>}
-            {asignadas!=null && asignadas.length>0&&<div className="caja-registro-usac dev ops">
+            {existe != null && existe == true  && <div className="caja-registro-usac dev ops">
                 <form onSubmit={changeAsignacion}>
                     <h2>Selecciona las conferencias que desees agregar a tu asignacion</h2>
                     <Select className="conf-usac" name="conferencias"
