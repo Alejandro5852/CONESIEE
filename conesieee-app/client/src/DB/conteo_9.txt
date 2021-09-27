@@ -1,0 +1,9 @@
+ABB "Movility",Estudiante,1
+ABB "Movility",Ingeniería Civil en Electricidad,1
+ABB "Movility",Ingeniería Eléctrica,2
+ABB "Movility",Ingeniería Electrónica,53
+ABB "Movility",Ingeniería en Energía,1
+ABB "Movility",Ingeniería Mecánica Eléctrica,47
+ABB "Movility",Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+ABB "Movility",Licenciatura en supervisión eléctrica,1
+ABB "Movility",Participante,60

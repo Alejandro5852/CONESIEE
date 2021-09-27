@@ -1,0 +1,9 @@
+ABB “Teoría de Variadores”,Estudiante,1
+ABB “Teoría de Variadores”,Ingeniería Civil en Electricidad,1
+ABB “Teoría de Variadores”,Ingeniería Eléctrica,4
+ABB “Teoría de Variadores”,Ingeniería Electrónica,31
+ABB “Teoría de Variadores”,Ingeniería en Energía,1
+ABB “Teoría de Variadores”,Ingeniería Mecánica Eléctrica,54
+ABB “Teoría de Variadores”,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+ABB “Teoría de Variadores”,Licenciatura en supervisión eléctrica,1
+ABB “Teoría de Variadores”,Participante,72

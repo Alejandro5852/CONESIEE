@@ -1,0 +1,9 @@
+Mantenimiento Predictivo,Electrónica,1
+Mantenimiento Predictivo,Ingeniería Civil en Electricidad,1
+Mantenimiento Predictivo,Ingeniería Eléctrica,3
+Mantenimiento Predictivo,Ingeniería Electrónica,94
+Mantenimiento Predictivo,Ingeniería Mecánica Eléctrica,59
+Mantenimiento Predictivo,Laboratorio Circuitos Electricos 2,1
+Mantenimiento Predictivo,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Mantenimiento Predictivo,Licenciatura en supervisión eléctrica,1
+Mantenimiento Predictivo,Participante,69

@@ -1,0 +1,9 @@
+Hidroeléctricas en Guatemala,05,1
+Hidroeléctricas en Guatemala,Electrónica,1
+Hidroeléctricas en Guatemala,Ing. en Energia ,1
+Hidroeléctricas en Guatemala,Ingeniería Eléctrica,4
+Hidroeléctricas en Guatemala,Ingeniería Electrónica,52
+Hidroeléctricas en Guatemala,Ingenieria Industrial,2
+Hidroeléctricas en Guatemala,Ingeniería Mecánica Eléctrica,77
+Hidroeléctricas en Guatemala,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Hidroeléctricas en Guatemala,Participante,96

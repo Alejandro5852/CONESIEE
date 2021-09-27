@@ -1,0 +1,9 @@
+Riesgo eléctrico\, Normativa de la empresa,Electrónica,1
+Riesgo eléctrico\, Normativa de la empresa,Ingeniería Civil en Electricidad,1
+Riesgo eléctrico\, Normativa de la empresa,Ingeniería Eléctrica,3
+Riesgo eléctrico\, Normativa de la empresa,Ingeniería Electrónica,28
+Riesgo eléctrico\, Normativa de la empresa,Ingeniería Mecánica Eléctrica,61
+Riesgo eléctrico\, Normativa de la empresa,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Riesgo eléctrico\, Normativa de la empresa,Laboratorio Ingeniería Electrica 1 y 2,1
+Riesgo eléctrico\, Normativa de la empresa,Licenciatura en supervisión eléctrica,1
+Riesgo eléctrico\, Normativa de la empresa,Participante,92

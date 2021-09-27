@@ -1,0 +1,9 @@
+Cloud y Nfv,Electrónica 5,1
+Cloud y Nfv,Ingeniería Civil en Electricidad,1
+Cloud y Nfv,Ingeniería Electrónica,103
+Cloud y Nfv,Ingeniería en Energía,1
+Cloud y Nfv,Ingeniería Mecánica Eléctrica,17
+Cloud y Nfv,Laboratorio Circuitos Electricos 2,1
+Cloud y Nfv,Laboratorio Comunicaciones 3,1
+Cloud y Nfv,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Cloud y Nfv,Participante,13

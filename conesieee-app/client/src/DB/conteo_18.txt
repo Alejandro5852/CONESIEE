@@ -1,0 +1,12 @@
+Inteligencia artificial,05,1
+Inteligencia artificial,Electrónica 5,1
+Inteligencia artificial,Estudiante,1
+Inteligencia artificial,Ingeniería Civil en Electricidad,1
+Inteligencia artificial,Ingeniería Eléctrica,2
+Inteligencia artificial,Ingeniería Electrónica,145
+Inteligencia artificial,Ingeniería en Energía,1
+Inteligencia artificial,Ingenieria Industrial,2
+Inteligencia artificial,Ingeniería Mecánica Eléctrica,52
+Inteligencia artificial,Laboratorio Circuitos Electricos 2,1
+Inteligencia artificial,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Inteligencia artificial,Participante,33

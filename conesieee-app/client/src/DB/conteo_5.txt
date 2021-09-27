@@ -1,0 +1,10 @@
+Termografía,05,1
+Termografía,Conversión de Energía Electromagnética 1,1
+Termografía,Electrónica,1
+Termografía,Estudiante,1
+Termografía,Ingeniería Eléctrica,5
+Termografía,Ingeniería Electrónica,36
+Termografía,Ingeniería Mecánica Eléctrica,79
+Termografía,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Termografía,Licenciatura en supervisión eléctrica,1
+Termografía,Participante,84

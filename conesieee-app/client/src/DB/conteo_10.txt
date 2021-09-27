@@ -1,0 +1,9 @@
+ABB “Digital Solution”,Estudiante,1
+ABB “Digital Solution”,Ingeniería Civil en Electricidad,1
+ABB “Digital Solution”,Ingeniería Eléctrica,2
+ABB “Digital Solution”,Ingeniería Electrónica,44
+ABB “Digital Solution”,Ingeniería en Energía,1
+ABB “Digital Solution”,Ingeniería Mecánica Eléctrica,44
+ABB “Digital Solution”,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+ABB “Digital Solution”,Licenciatura en supervisión eléctrica,1
+ABB “Digital Solution”,Participante,54

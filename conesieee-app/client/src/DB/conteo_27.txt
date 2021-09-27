@@ -1,0 +1,13 @@
+Emprendimientos electrónicos,Electrónica,1
+Emprendimientos electrónicos,Electrónica 5,1
+Emprendimientos electrónicos,Estudiante,1
+Emprendimientos electrónicos,Ingeniería Civil en Electricidad,1
+Emprendimientos electrónicos,Ingeniería Electrónica,138
+Emprendimientos electrónicos,Ingeniería en Energía,1
+Emprendimientos electrónicos,Ingenieria Industrial,1
+Emprendimientos electrónicos,Ingeniería Mecánica Eléctrica,35
+Emprendimientos electrónicos,Laboratorio Circuitos Electricos 2,1
+Emprendimientos electrónicos,Laboratorio Comunicaciones 3,1
+Emprendimientos electrónicos,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Emprendimientos electrónicos,Licenciatura en supervisión eléctrica,1
+Emprendimientos electrónicos,Participante,28

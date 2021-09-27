@@ -1,0 +1,11 @@
+Elementos básicos de un sitio de telefonía móvil,Electrónica 5,1
+Elementos básicos de un sitio de telefonía móvil,Estudiante,1
+Elementos básicos de un sitio de telefonía móvil,Ingeniería Eléctrica,1
+Elementos básicos de un sitio de telefonía móvil,Ingeniería Electrónica,133
+Elementos básicos de un sitio de telefonía móvil,Ingeniería en Energía,1
+Elementos básicos de un sitio de telefonía móvil,Ingenieria Industrial,1
+Elementos básicos de un sitio de telefonía móvil,Ingeniería Mecánica Eléctrica,31
+Elementos básicos de un sitio de telefonía móvil,Laboratorio Circuitos Electricos 2,1
+Elementos básicos de un sitio de telefonía móvil,Laboratorio Comunicaciones 3,1
+Elementos básicos de un sitio de telefonía móvil,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Elementos básicos de un sitio de telefonía móvil,Participante,22

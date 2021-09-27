@@ -1,0 +1,9 @@
+Líneas de transmisión,Conversión de Energía Electromagnética 1,1
+Líneas de transmisión,Estudiante,1
+Líneas de transmisión,Ing. en Energia ,1
+Líneas de transmisión,Ingeniería Civil en Electricidad,1
+Líneas de transmisión,Ingeniería Eléctrica,5
+Líneas de transmisión,Ingeniería Electrónica,50
+Líneas de transmisión,Ingeniería Mecánica Eléctrica,86
+Líneas de transmisión,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Líneas de transmisión,Participante,107

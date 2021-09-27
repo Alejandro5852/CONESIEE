@@ -1,0 +1,9 @@
+Investigación Biomédica,05,1
+Investigación Biomédica,Electrónica 5,1
+Investigación Biomédica,Ingeniería Eléctrica,2
+Investigación Biomédica,Ingeniería Electrónica,119
+Investigación Biomédica,Ingenieria Industrial,2
+Investigación Biomédica,Ingeniería Mecánica Eléctrica,52
+Investigación Biomédica,Laboratorio Circuitos Electricos 2,1
+Investigación Biomédica,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Investigación Biomédica,Participante,47

@@ -1,0 +1,15 @@
+Automatización,05,1
+Automatización,Conversión de Energía Electromagnética 1,1
+Automatización,Electrónica,1
+Automatización,Estudiante,1
+Automatización,Ing. en Energia ,1
+Automatización,Ingeniería Civil en Electricidad,1
+Automatización,Ingeniería Eléctrica,3
+Automatización,Ingeniería Electrónica,141
+Automatización,Ingeniería en Energía,1
+Automatización,Ingenieria Industrial,2
+Automatización,Ingeniería Mecánica Eléctrica,83
+Automatización,Laboratorio Comunicaciones 3,1
+Automatización,Laboratorio Electrónica 6 / Laboratorio Electrónica 5,1
+Automatización,Licenciatura en supervisión eléctrica,2
+Automatización,Participante,87
