@@ -1,0 +1,55 @@
+Carlos ,boche,1984808140101,carlosboche@gmail.com
+Edwin Geovanny Guzman Caniche,Guzman Caniche,166,geoguzman90@gmail.com
+Gerson Alexander,Cux García,2882648860101,2882648860101@ingenieria.usa.edu.gt
+Pablo Francisco,Monroy,2676124940108,pabloaafmp@gmail.com
+DITER,FLORES CALDERON,8315168,diterflores93@gmail.com
+Nolberto julinho Gomez Espinoza,Gómez Espinoza,965421178,nolberto.g.uni@gmail.com
+Abner Esteban,Castro Ramírez,3657193580101,3657193580101@ingenieria.usac.edu.gt
+Brandon Roberto ,Estrada Herrera ,2856625700101,2856625700101@ingenieria.usac.edu.gt
+Dylan Ricardo,Marroquín Siquibach,2714788020101,2714788020101@ingenieria.usac.edu.gt
+Angel Estuardo ,Lee Gallardo ,3655046290101,3655046290101@ingenieria.usac.edu.gt
+Henry Mauricio ,Castro Natareno ,2996696450101,2996696450101@ingenieria.usac.edu.gt
+Oscar Dennilson ,Vásquez Castañon ,2840150831201,2840150831201@ingenria.usac.edu.gt
+Armando Alonso,Rivera Carrillo,2501003980101,2501003980101@ingenierial.usac.edu.gt
+Pablo Josué,Godoy Sintuj,1611935361603,1611935361603@ingenieria.usac.edu.gt
+Carlos Alberto ,Navarro Fuentes ,1844181511202,1617588000101@ingenieria.usac.edu.gt
+Mynor David,Ramirez Orellana,3004806280101,3004806280101@ingenieria.usac.edu.gt
+José Anibal,Silva de los Angeles,1646612980101,jasda@ingenieria.usac.edu.gt
+Pablo Estevan ,Pineda Estrada,2971220020101,2971220020101@ingenieria.usac.edu.gt
+Josué Giovany,García Perdomo,1797087160101,1797087160101@ingenieria.usac.edu.gt
+José Alberto,Yoc Yax,1642918140101,1642918140101@ingenieria.usac.edu.gt
+Soohyun,Jeon,2461857320115,cirus.0924@gmail.com
+Gabriel Esaú,Can López,3055644390301,3055644390301@ingenieria.usac.edu.gt
+José Vicente Pérez García,García,1675636290020,1675636290920@ingenieria.usac.edu.gt
+Evelin Miriam, Ramírez Pérez,2720713310101,2720713310101@ingenieria.usac.edu.gt
+Francisco,Pascual Miguel,3624376611326,3624376611326@ingenieria.usac.edu.gt
+Eduardo Alexander,Xiquin Castro,2512177520101,2512177520101@ingenieria.usac.edu.gt
+Sergio David,Garcia Marroquin,3019377960101,3019377960101@ingenieria.usac.edu.gt
+Axel Eduardo,Toc Castillo,3006657680101,3006657680101@ingenieria.usac.edu.gt
+Silvia Gabriela,Secaira Fonseca,3009491110101,3009491110101@ingenieria.usac.edu.gt
+Josue Daniel,Xajil Ramos,1577346330101,1577346330101@ingenieria.usac.edu.gt
+Julio Alejandro,Chocano López,3137758851217,3137758851217@ingenieria.usac.edu.gt
+Mynor Estuardo,García Hernández,2533910830301,2533910830301@ingenieria.usac.edu.gt
+Melvin Haroldo ,subuyuj Chavez ,2776830680110,2776830680110@ingenieria.usac
+MARIO RENÉ,BAUTISTA SALGUERO,2061156950310,2061156950310@ingenieria.usac.edu.gt
+Luis Alejandro,Marroquin Gonzalez,3006104590101,alejandro.marroquin@galileo.edu
+Ana Luisa,Ordoñez Ulin,3782599110901,3782599110901@ingenieria.usac.edu.gt
+Ricardo,Ayala Quirán,2337843810101,ricardo21ayala@gmail.com
+Israel Enrique,Gonzalezoliva,1865646000101,1865646000101@ingenieria.usac.edu.gt
+Selvin Otoniel,López Rodas,3011407150101,3011407150101@ingenieria.usac.edu.gt
+Eliezer,Ajuchán Xovin,2527800860409,2527800860409@ingenieria.usac.edu.gt
+Julio,Lago,2451460830101,jl10dg@gmail.com
+José Fernando,Ical Tubin,3595244430115,3595244430115@ingenieria.usac.edu.gt
+Diana Paola,Gutiérrez Lima,3003635910101,3003635910101@ingenieria.usac.edu.gt
+José Luis ,Montes de Oca Miranda,2999420230101,joseluischepe1205@gmail.com
+Fredy Gonzalo,Gómez Elias,1838348010101,183834801@ingenieria.usac.edu.gt
+Mario Arnoldo ,García Olivarez,1719368840101,1719368840101@ingenieria.usac.edu.gt
+Martin salomon,Saban tomas,34567823,sabanm296@gmail.com
+Carlos Rene,Tzoc Polanco,3013249640101,3013249640101@ingenieria.usac.edu.gt
+Richard Rodrigo ,Culajay López ,2160339850101,2160339850101@ingenieria.usac.edu.gt
+Brandon Aroldo,López García,2332548700511,2332548700511@ingenieria.usac.edu.gt
+asfsda,asdfasdf,123456,fasdf@sadf.com
+Carlos Manuel,Búrbano Mérida,3008280040101,3008280040101@ingenieria.usac.edu.gt
+Gerber erick,Cuycuh mejia,2317230320101,2317230320101@ingenieria.usac.edu.gt
+Carlos Alfredo,Gonzalez Velasquez,3018865630101,3018865630101@ingenieria.usac.edu.gt
+Eleuterio Francis,García Aguilón,3096682711210,3096682711210@ingenieria.usac.edu.gt
